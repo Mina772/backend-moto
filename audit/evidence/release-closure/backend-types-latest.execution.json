@@ -1,0 +1,13 @@
+{
+  "name": "backend-types-latest",
+  "command": "node",
+  "args": [
+    "node_modules/typescript/bin/tsc",
+    "-p",
+    "tsconfig.json",
+    "--noEmit"
+  ],
+  "code": 0,
+  "spawnError": null,
+  "finishedAt": "2026-10-12T09:41:26.048Z"
+}

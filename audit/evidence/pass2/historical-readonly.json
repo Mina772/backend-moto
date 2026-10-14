@@ -1,0 +1,66 @@
+{
+  "status": "read-only-completed",
+  "at": "2026-10-12T07:03:17.233Z",
+  "operations": [
+    "countDocuments",
+    "aggregate",
+    "listIndexes"
+  ],
+  "productCount": 2,
+  "purchaseCount": 0,
+  "duplicateSupplierInvoices": {
+    "groups": 0,
+    "documents": 0
+  },
+  "priceShapes": [
+    {
+      "_id": {
+        "prices": "object",
+        "retail1": "int",
+        "retail2": "int",
+        "wholesale": "int",
+        "salePrice": "missing",
+        "retailPrice": "missing"
+      },
+      "count": 2
+    }
+  ],
+  "purchaseIndexes": [
+    {
+      "key": {
+        "_id": 1
+      },
+      "unique": false
+    },
+    {
+      "key": {
+        "invoiceNumber": 1
+      },
+      "unique": true
+    },
+    {
+      "key": {
+        "supplierId": 1
+      },
+      "unique": false
+    },
+    {
+      "key": {
+        "branchId": 1
+      },
+      "unique": false
+    },
+    {
+      "key": {
+        "date": 1
+      },
+      "unique": false
+    },
+    {
+      "key": {
+        "status": 1
+      },
+      "unique": false
+    }
+  ]
+}

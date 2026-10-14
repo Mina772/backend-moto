@@ -1,0 +1,10 @@
+import type { WhatsAppTemplate } from '@moto/shared';
+
+/** Editable message formats with unresolved variables; no customer or transaction data. */
+export const DEFAULT_WHATSAPP_TEMPLATES: WhatsAppTemplate[] = [
+  { key: 'invoice', name: { ar: 'إرسال فاتورة', en: 'Send invoice' }, body: { ar: 'عزيزي {customer}، فاتورتكم رقم {invoice} لدى {company}. الإجمالي: {total}. المدفوع: {paid}. المتبقي: {remaining}.', en: 'Dear {customer}, your invoice {invoice} at {company}. Total: {total}. Paid: {paid}. Remaining: {remaining}.' }, variables: ['customer', 'company', 'invoice', 'total', 'paid', 'remaining'], isActive: true },
+  { key: 'statement', name: { ar: 'كشف حساب', en: 'Account statement' }, body: { ar: 'عزيزي {customer}، رصيدكم المستحق حتى {date}: {balance}. {company}', en: 'Dear {customer}, your outstanding balance as of {date}: {balance}. {company}' }, variables: ['customer', 'date', 'balance', 'company'], isActive: true },
+  { key: 'debt_reminder', name: { ar: 'تذكير بالسداد', en: 'Payment reminder' }, body: { ar: 'عزيزي {customer}، المبلغ المتبقي على الفاتورة {invoice}: {remaining}. أيام التأخير: {days}. {company}', en: 'Dear {customer}, remaining balance on invoice {invoice}: {remaining}. Days overdue: {days}. {company}' }, variables: ['customer', 'invoice', 'remaining', 'days', 'company'], isActive: true },
+  { key: 'payment_confirmation', name: { ar: 'تأكيد استلام دفعة', en: 'Payment confirmation' }, body: { ar: 'عزيزي {customer}، تم استلام {amount} بتاريخ {date}. رصيدكم الحالي: {balance}. {company}', en: 'Dear {customer}, payment of {amount} received on {date}. Current balance: {balance}. {company}' }, variables: ['customer', 'amount', 'date', 'balance', 'company'], isActive: true },
+  { key: 'promotion', name: { ar: 'عرض ترويجي', en: 'Promotion' }, body: { ar: 'عرض {company}: خصم {discount}% على {category} حتى {date}.', en: '{company} offer: {discount}% off {category} until {date}.' }, variables: ['company', 'discount', 'category', 'date'], isActive: false },
+];

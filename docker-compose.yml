@@ -1,0 +1,114 @@
+name: moto
+
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "5"
+
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    command: ["--replSet", "rs0", "--bind_ip_all", "--wiredTigerCacheSizeGB", "1"]
+    # Reachable only from the compose network and the host loopback — never publish 27017 publicly.
+    ports:
+      - "127.0.0.1:27017:27017"
+    volumes:
+      - mongo-data:/data/db
+      - mongo-backups:/backups
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 20s
+    stop_grace_period: 30s
+    logging: *logging
+    deploy:
+      resources:
+        limits:
+          memory: 2g
+
+  mongo-init:
+    image: mongo:7
+    depends_on:
+      mongo:
+        condition: service_healthy
+    restart: "no"
+    entrypoint: >
+      mongosh --host mongo --quiet --eval
+      "try { rs.status().ok } catch (e) { rs.initiate({ _id: 'rs0', members: [{ _id: 0, host: 'mongo:27017' }] }) }"
+    logging: *logging
+
+  api:
+    build:
+      context: .
+      args:
+        APP_VERSION: ${APP_VERSION:-2.0.0}
+    image: moto/api:${APP_VERSION:-2.0.0}
+    restart: unless-stopped
+    init: true
+    depends_on:
+      mongo-init:
+        condition: service_completed_successfully
+    environment:
+      NODE_ENV: production
+      PORT: 4000
+      MONGODB_URI: ${MONGODB_URI:-mongodb://mongo:27017/moto?replicaSet=rs0}
+      JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET in .env.docker}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:?set JWT_REFRESH_SECRET in .env.docker}
+      CORS_ORIGINS: ${CORS_ORIGINS:?set CORS_ORIGINS in .env.docker}
+      PUBLIC_URL: ${PUBLIC_URL:?set PUBLIC_URL in .env.docker}
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      TRUST_PROXY: ${TRUST_PROXY:-1}
+      RATE_LIMIT_MAX: ${RATE_LIMIT_MAX:-600}
+      WHATSAPP_MODE: ${WHATSAPP_MODE:-web}
+      WHATSAPP_TOKEN: ${WHATSAPP_TOKEN:-}
+      WHATSAPP_PHONE_ID: ${WHATSAPP_PHONE_ID:-}
+      WHATSAPP_COUNTRY_CODE: ${WHATSAPP_COUNTRY_CODE:-20}
+    # Public traffic goes through the frontend overlay or an external reverse proxy; this binding is for the desktop POS on the same host and for debugging.
+    ports:
+      - "${API_BIND:-127.0.0.1}:${API_PORT:-4000}:4000"
+    volumes:
+      - uploads:/app/uploads
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    stop_grace_period: 30s
+    logging: *logging
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+
+  # One-shot: `npm run docker -- run --rm backup`
+  backup:
+    image: mongo:7
+    profiles: ["tools"]
+    depends_on:
+      mongo:
+        condition: service_healthy
+    volumes:
+      - mongo-backups:/backups
+    entrypoint:
+      - bash
+      - -lc
+      - >
+        set -euo pipefail;
+        stamp=$$(date -u +%Y%m%dT%H%M%SZ);
+        mongodump --uri="$${MONGODB_URI:-mongodb://mongo:27017/moto?replicaSet=rs0}"
+        --archive="/backups/moto-$$stamp.gz" --gzip;
+        find /backups -name 'moto-*.gz' -mtime +$${BACKUP_RETENTION_DAYS:-14} -delete;
+        echo "backup written: /backups/moto-$$stamp.gz"
+    environment:
+      MONGODB_URI: ${MONGODB_URI:-mongodb://mongo:27017/moto?replicaSet=rs0}
+      BACKUP_RETENTION_DAYS: ${BACKUP_RETENTION_DAYS:-14}
+    logging: *logging
+
+volumes:
+  mongo-data:
+  mongo-backups:
+  uploads:

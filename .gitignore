@@ -1,0 +1,15 @@
+node_modules
+dist
+coverage
+release
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+!.env.docker.example
+*.log
+uploads/*
+!uploads/.gitkeep
+audit/tmp/
+audit/evidence/release-closure/tmp/
+audit/evidence/release-closure/tools/mongodb-database-tools-*/

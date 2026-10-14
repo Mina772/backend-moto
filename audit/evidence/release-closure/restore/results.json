@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "isolation": "owned authenticated loopback replica set, synthetic documents, random credentials",
+  "docker": "unavailable",
+  "tls": "not qualified",
+  "pitr": "not qualified",
+  "dumpMs": 70,
+  "restoreMs": 395,
+  "collections": [
+    {
+      "name": "sales",
+      "documents": 1,
+      "sha256": "e2f39bd71dadc3154decf818c7e1eccabfa8f192b194043799457bcc51127e18",
+      "indexesEqual": true
+    },
+    {
+      "name": "customerdebts",
+      "documents": 1,
+      "sha256": "85532880214308c991dff3150e7213b86086740f363f81e0f43fe610c52cebc4",
+      "indexesEqual": true
+    },
+    {
+      "name": "customerpayments",
+      "documents": 1,
+      "sha256": "32d630c1682e64a3ce33f7e50754f1c6c31ffa3a932956c0c694e9a3e3b0b718",
+      "indexesEqual": true
+    },
+    {
+      "name": "salereturns",
+      "documents": 1,
+      "sha256": "204211fecec368378898edd0d19185c9ff9f337091ac2822276d3716b0f485af",
+      "indexesEqual": true
+    },
+    {
+      "name": "purchases",
+      "documents": 1,
+      "sha256": "63ff8d3459e18ba7927548aa56bd9765e4e0a823635bb7309726f7b220cb1a74",
+      "indexesEqual": true
+    },
+    {
+      "name": "supplierpayments",
+      "documents": 1,
+      "sha256": "f71fc5849dab3e2dba3c2d72f8bb53d0fc53a2c5ce5938747a6e16dabe111734",
+      "indexesEqual": true
+    },
+    {
+      "name": "purchasereturns",
+      "documents": 1,
+      "sha256": "710d587f2af7cf1124734d889b5f7fc0cf219a0e45025256433064172f32e7dc",
+      "indexesEqual": true
+    },
+    {
+      "name": "supplierreimbursements",
+      "documents": 1,
+      "sha256": "c35ab9bc425a3f1c2616992a026e90d4e837cb41b79082390df5254c568a1ed7",
+      "indexesEqual": true
+    },
+    {
+      "name": "stocklevels",
+      "documents": 1,
+      "sha256": "6da9d63ce090a8d0fc8d7f710eaace3760c312a7f6b9d67aca2def8dc33d9a05",
+      "indexesEqual": true
+    }
+  ],
+  "archiveSha256": "f6a3b00e58725e4185dde52d6e79de8ce415dfa0c878cda06b3abfe774c417b9",
+  "archiveBytes": 1210,
+  "rpo": "fixture snapshot only; no continuous backup or oplog replay",
+  "productionApi": {
+    "authEnforced": true,
+    "allowedCors": true,
+    "disallowedCors": true,
+    "hstsHeader": true,
+    "processRestart": true,
+    "dataBase": "separate synthetic release_api"
+  }
+}

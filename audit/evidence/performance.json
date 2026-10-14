@@ -1,0 +1,56 @@
+{
+  "environment": {
+    "node": "v22.17.0",
+    "platform": "win32",
+    "cpu": "13th Gen Intel(R) Core(TM) i7-13650HX",
+    "memoryGiB": 15.7,
+    "database": "disposable MongoMemoryReplSet, existing synthetic seed",
+    "limitations": "Loopback development measurements, small seeded catalog, no production acceptance thresholds. Includes auth/database overhead; rate limiting disabled in test mode."
+  },
+  "results": [
+    {
+      "endpoint": "/products/lookup?term=SKU-C4-0001&branchId=br-1",
+      "samples": 100,
+      "concurrency": 5,
+      "failures": 0,
+      "errorRate": 0,
+      "p50ms": 16.21,
+      "p95ms": 21.58,
+      "p99ms": 22.46,
+      "throughputPerSecond": 280.19
+    },
+    {
+      "endpoint": "/products/lookup?term=MP000014&branchId=br-1",
+      "samples": 100,
+      "concurrency": 5,
+      "failures": 0,
+      "errorRate": 0,
+      "p50ms": 14.99,
+      "p95ms": 17.83,
+      "p99ms": 19.36,
+      "throughputPerSecond": 307.37
+    },
+    {
+      "endpoint": "/reports/accounting?branchId=br-1&from=2020-01-01&to=2030-12-31",
+      "samples": 100,
+      "concurrency": 5,
+      "failures": 0,
+      "errorRate": 0,
+      "p50ms": 103.5,
+      "p95ms": 130.06,
+      "p99ms": 147.56,
+      "throughputPerSecond": 44.63
+    },
+    {
+      "endpoint": "/products?pageSize=100&branchId=br-1",
+      "samples": 100,
+      "concurrency": 5,
+      "failures": 0,
+      "errorRate": 0,
+      "p50ms": 32.09,
+      "p95ms": 42.69,
+      "p99ms": 45.54,
+      "throughputPerSecond": 140.56
+    }
+  ]
+}

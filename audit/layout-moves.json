@@ -1,0 +1,607 @@
+﻿[
+    {
+        "from":  ".env.example",
+        "to":  "erp-backend/.env.docker.example",
+        "sha256":  "EAAD040B78BA3722E45E4BD97BCA0E4FB2A7E4F0EEC6B434EB51BBD9FA80FF5A"
+    },
+    {
+        "from":  "docker-compose.yml",
+        "to":  "erp-backend/docker-compose.yml",
+        "sha256":  "CC3BF8B46B932E4F4BABA0041A912107E132E52F6E63C2AE4A9897DD65FD2E72"
+    },
+    {
+        "from":  "audit/scripts/server.ts",
+        "to":  "erp-backend/audit/scripts/server.ts",
+        "sha256":  "2A40C5CE397E0232B11B8165A1F8479CA48BC740AE75FEF9CF172FC9EABE3C60"
+    },
+    {
+        "from":  "audit/scripts/performance.mjs",
+        "to":  "erp-backend/audit/scripts/performance.mjs",
+        "sha256":  "CD980F3C5D9432E94FF285382C9555BDF4F8618A2D1862648548E75ABF85D387"
+    },
+    {
+        "from":  "audit/scripts/historical-readonly.mjs",
+        "to":  "erp-backend/audit/scripts/historical-readonly.mjs",
+        "sha256":  "D7869D1D287CAA4C7B9B9722F03698627F50C0185E4D571F050EAFA91784B559"
+    },
+    {
+        "from":  "audit/scripts/reproduce-pass2.mjs",
+        "to":  "erp-backend/audit/scripts/reproduce-pass2.mjs",
+        "sha256":  "0A43C731B4D04373CB944C43527E9A1890DE464E8846C166C41EEC5632878F94"
+    },
+    {
+        "from":  "audit/scripts/reproduce-supplier-statement.mjs",
+        "to":  "erp-backend/audit/scripts/reproduce-supplier-statement.mjs",
+        "sha256":  "3702A8F5E17877C605A373E08D45BC1DB3DB995D03BDD1CA9A62D5FF1C5A3C24"
+    },
+    {
+        "from":  "audit/scripts/restore-release.mjs",
+        "to":  "erp-backend/audit/scripts/restore-release.mjs",
+        "sha256":  "BE4E733959DA3C87894E74378F8870897BEEE0D917C589612925A8C7BAD471DC"
+    },
+    {
+        "from":  "audit/scripts/download-mongo-tools.ps1",
+        "to":  "erp-backend/audit/scripts/download-mongo-tools.ps1",
+        "sha256":  "5048CC98041E68A998F60403FE132B3EF6CC7BE8C5AA12BD07EFCF43A8E23763"
+    },
+    {
+        "from":  "audit/originals/erp-backend/README.md",
+        "to":  "erp-backend/audit/originals/README.md",
+        "sha256":  "0EEA3B1471B11786BC389E8F9F46C46FB4C911F0828FF982C44C5E7C1D006029"
+    },
+    {
+        "from":  "audit/originals/erp-backend/src/middleware/errorHandler.ts",
+        "to":  "erp-backend/audit/originals/src/middleware/errorHandler.ts",
+        "sha256":  "C12089CD6948B2F67223FF77C8CAD45E64E77002DC5B603A367A3731F524B07D"
+    },
+    {
+        "from":  "audit/originals/erp-backend/src/modules/customers/routes.ts",
+        "to":  "erp-backend/audit/originals/src/modules/customers/routes.ts",
+        "sha256":  "D49D88760F3FDCD66F38EB3F1191BA71CCCFA034F61193EC159D110233DB22D9"
+    },
+    {
+        "from":  "audit/originals/erp-backend/src/modules/inventory/routes.ts",
+        "to":  "erp-backend/audit/originals/src/modules/inventory/routes.ts",
+        "sha256":  "70760A51FF40EE0340E60C4B15193D8D747A4C8C89AB2BB6ABC65A264B7BCC8D"
+    },
+    {
+        "from":  "audit/originals/erp-backend/src/modules/inventory/stock.ts",
+        "to":  "erp-backend/audit/originals/src/modules/inventory/stock.ts",
+        "sha256":  "069E7C000599DCDA458852BF34DA461B46095340D9CF21471CE65647903F27B8"
+    },
+    {
+        "from":  "audit/originals/erp-backend/src/modules/purchases/routes.ts",
+        "to":  "erp-backend/audit/originals/src/modules/purchases/routes.ts",
+        "sha256":  "4055A4BD67C67A9BB32CF3898B9734900B722AD6552239C337A5FFD45FB61E65"
+    },
+    {
+        "from":  "audit/originals/erp-backend/src/modules/reports/service.ts",
+        "to":  "erp-backend/audit/originals/src/modules/reports/service.ts",
+        "sha256":  "225F9194438A18A6C26E6A4CA6942D4AF23586C7812364871C880CE5FF1C7A3E"
+    },
+    {
+        "from":  "audit/originals/erp-backend/src/modules/sales/service.ts",
+        "to":  "erp-backend/audit/originals/src/modules/sales/service.ts",
+        "sha256":  "737178F153E68D98E91C5DB4E0B71B0613EDA04F526BF4C831EC547448057677"
+    },
+    {
+        "from":  "audit/originals/erp-backend/src/modules/settings/routes.ts",
+        "to":  "erp-backend/audit/originals/src/modules/settings/routes.ts",
+        "sha256":  "A7252BE22C39B5F19123DB80E6B6768CD82634F287C4FE40B96D1F5748C6E2C6"
+    },
+    {
+        "from":  "audit/originals-pass2/erp-backend/src/modules/customers/routes.ts",
+        "to":  "erp-backend/audit/originals-pass2/src/modules/customers/routes.ts",
+        "sha256":  "704F65AB8B24343DD1504D82885F73414FCAE6F406398638360A3831121E7E61"
+    },
+    {
+        "from":  "audit/originals-pass2/erp-backend/src/modules/customers/service.ts",
+        "to":  "erp-backend/audit/originals-pass2/src/modules/customers/service.ts",
+        "sha256":  "C3538D59A341DAC7D78D5540F2E1FDA06AF545866A5F5C439733BA8C37DDA4E5"
+    },
+    {
+        "from":  "audit/originals-pass2/erp-backend/src/modules/purchases/routes.ts",
+        "to":  "erp-backend/audit/originals-pass2/src/modules/purchases/routes.ts",
+        "sha256":  "2F4DD6F5FF4662D1483064B5B44F6544E7417D5693BA07DDC0D0115ABED762B2"
+    },
+    {
+        "from":  "audit/originals-pass2/erp-backend/src/modules/sales/sales.test.ts",
+        "to":  "erp-backend/audit/originals-pass2/src/modules/sales/sales.test.ts",
+        "sha256":  "A56BE5ABEFAA9D0BBAB6AA82F446D69D6C1C9777151B531BDE9583371C3BB22B"
+    },
+    {
+        "from":  "audit/originals-pass2/erp-backend/src/modules/sales/service.ts",
+        "to":  "erp-backend/audit/originals-pass2/src/modules/sales/service.ts",
+        "sha256":  "8B6B6E136700F3EECA5FAEB6EBE54F2F8EE930F3CFACB34FEC1A61A4358C6E88"
+    },
+    {
+        "from":  "audit/originals-pass2/erp-backend/src/modules/sync/routes.ts",
+        "to":  "erp-backend/audit/originals-pass2/src/modules/sync/routes.ts",
+        "sha256":  "489AC2F96FEF0E6A5E9896D0DD50B125C1C2031921ACF87DF9C07C39EB08163B"
+    },
+    {
+        "from":  "audit/originals-pass3/erp-backend/package-lock.json",
+        "to":  "erp-backend/audit/originals-pass3/package-lock.json",
+        "sha256":  "A951141D2858C7615123AFB61EAB890D6CDA6DA67537F66B0A7BE7C3E9A80C59"
+    },
+    {
+        "from":  "audit/originals-pass3/erp-backend/package.json",
+        "to":  "erp-backend/audit/originals-pass3/package.json",
+        "sha256":  "A9D21E7A0B8F2AF1824985A09A50682D831320E3C4D6E38735FAE172F1CFA1EA"
+    },
+    {
+        "from":  "audit/originals-pass3/erp-backend/packages/shared/package.json",
+        "to":  "erp-backend/audit/originals-pass3/packages/shared/package.json",
+        "sha256":  "6297FB809EFF889DB8A2F2981048433FE2A5335FC63EC3F8185B213CB4A06AEF"
+    },
+    {
+        "from":  "audit/originals-final/erp-backend/src/config/env.ts",
+        "to":  "erp-backend/audit/originals-final/src/config/env.ts",
+        "sha256":  "212CCA5127899E55EFE9D5808A6C89775AA4629C041D2858BD882A8DA03CDD72"
+    },
+    {
+        "from":  "audit/originals-final/erp-backend/src/db/models.ts",
+        "to":  "erp-backend/audit/originals-final/src/db/models.ts",
+        "sha256":  "894D0E2B8E663E8668808DE6E9C3A598B302045A84F39430D38583815A497366"
+    },
+    {
+        "from":  "audit/originals-final/erp-backend/src/db/schema-helpers.ts",
+        "to":  "erp-backend/audit/originals-final/src/db/schema-helpers.ts",
+        "sha256":  "3EB0877BF888D8B36AF53DC60A42DA7684ACA9F731293DBE24AEACE9DB3E1122"
+    },
+    {
+        "from":  "audit/originals-final/erp-backend/src/jobs/index.ts",
+        "to":  "erp-backend/audit/originals-final/src/jobs/index.ts",
+        "sha256":  "DC60B19B371AC9D2F1D19A234F92E4EE160E4270FF7D63BCCF165776DA67333B"
+    },
+    {
+        "from":  "audit/originals-final/erp-backend/src/lib/pagination.ts",
+        "to":  "erp-backend/audit/originals-final/src/lib/pagination.ts",
+        "sha256":  "E9B4447EBC058038A49478E1588BCB53927F3A37F912D8F826827C98F26E9726"
+    },
+    {
+        "from":  "audit/originals-final/erp-backend/src/middleware/auth.ts",
+        "to":  "erp-backend/audit/originals-final/src/middleware/auth.ts",
+        "sha256":  "734FE71508710E8767A088060A17EFBFA5FD6B462D54A272D6231E1A08BA4E12"
+    },
+    {
+        "from":  "audit/originals-final/erp-backend/src/modules/auth/routes.ts",
+        "to":  "erp-backend/audit/originals-final/src/modules/auth/routes.ts",
+        "sha256":  "A8F527B30C3130C9EB9B5837FEEB7A80B9ED1408F28CEEA9905B003CDCDF31E7"
+    },
+    {
+        "from":  "audit/originals-final/erp-backend/src/modules/customers/service.ts",
+        "to":  "erp-backend/audit/originals-final/src/modules/customers/service.ts",
+        "sha256":  "843A5D56CA08419D431EF8F27D353FC0AF2F8D6B24C3B282E44C6F1707B83D5C"
+    },
+    {
+        "from":  "audit/originals-final/erp-backend/src/modules/org/routes.ts",
+        "to":  "erp-backend/audit/originals-final/src/modules/org/routes.ts",
+        "sha256":  "CFAC1D4587CD468D37A3A1E0F0765CADD4D91EE4FB7783A23B6078230E241FE1"
+    },
+    {
+        "from":  "audit/originals-final/erp-backend/src/modules/purchases/routes.ts",
+        "to":  "erp-backend/audit/originals-final/src/modules/purchases/routes.ts",
+        "sha256":  "103541D5241F58BC1C167B19177E9FA6116AAF15A857D25272942BB8E07A7677"
+    },
+    {
+        "from":  "audit/originals-final/erp-backend/src/modules/reports/service.ts",
+        "to":  "erp-backend/audit/originals-final/src/modules/reports/service.ts",
+        "sha256":  "2FB197740414D1C1114C130C924AFE89C7162552DF089018C7EAD46B8A685B4F"
+    },
+    {
+        "from":  "audit/originals-final/erp-backend/src/modules/sales/routes.ts",
+        "to":  "erp-backend/audit/originals-final/src/modules/sales/routes.ts",
+        "sha256":  "6D5B05FAF30647E0DB2C0CACDF9EBF83DC5A4400D87C77F6C2C33D398EF11ECA"
+    },
+    {
+        "from":  "audit/originals-final/erp-backend/src/modules/sales/service.ts",
+        "to":  "erp-backend/audit/originals-final/src/modules/sales/service.ts",
+        "sha256":  "7FCF53C473C4A82C256EB2A7445F3946A44650A546683B797C99AF3DC5FB310B"
+    },
+    {
+        "from":  "audit/originals-final/erp-backend/src/realtime/socket.ts",
+        "to":  "erp-backend/audit/originals-final/src/realtime/socket.ts",
+        "sha256":  "8130F59D14D8D851D6D2719CFA22627F1D743AEF1AA33B19A4EFE014910867D7"
+    },
+    {
+        "from":  "audit/originals-release-closure/erp-backend/src/db/models.ts",
+        "to":  "erp-backend/audit/originals-release-closure/src/db/models.ts",
+        "sha256":  "88776C81062040E7B396A4B7B00A4FC8BF331CAE04188496DAEBA9F5F88DDC4F"
+    },
+    {
+        "from":  "audit/originals-release-closure/erp-backend/src/modules/purchases/routes.ts",
+        "to":  "erp-backend/audit/originals-release-closure/src/modules/purchases/routes.ts",
+        "sha256":  "3E237E4D983AB4607F3C2AD7491B1E779A75FD3093AA7AD2EF683D4D89BDB1A7"
+    },
+    {
+        "from":  "audit/originals-release-closure/erp-backend/src/realtime/socket.ts",
+        "to":  "erp-backend/audit/originals-release-closure/src/realtime/socket.ts",
+        "sha256":  "8F0411E81DF7275AEF490539E7E037DC4CC1998355B3EC3B63E774757D28DF3A"
+    },
+    {
+        "from":  "audit/evidence/backend-dependencies.json",
+        "to":  "erp-backend/audit/evidence/backend-dependencies.json",
+        "sha256":  "93E094CF8D74F7E5C0D91B5B588DF07A6CBF663C4BE9F007A00E3F12C2F528B2"
+    },
+    {
+        "from":  "audit/evidence/backend-runtime-dependencies.json",
+        "to":  "erp-backend/audit/evidence/backend-runtime-dependencies.json",
+        "sha256":  "C3C80AD775C919E4E9EA095A2762A22EA371FEDF69DF717CD0D3CAC03AA5DB4D"
+    },
+    {
+        "from":  "audit/evidence/final-api-regressions.log",
+        "to":  "erp-backend/audit/evidence/final-api-regressions.log",
+        "sha256":  "29A05F0A8C42D0FCB02E55B98F6F91051338A77DD335BC035394D3B9E41B37D1"
+    },
+    {
+        "from":  "audit/evidence/performance.json",
+        "to":  "erp-backend/audit/evidence/performance.json",
+        "sha256":  "A460E155C665B130D0F93DCA3ED115346C5F942B3021A3AEA42179CAF25CB9FB"
+    },
+    {
+        "from":  "audit/evidence/performance.log",
+        "to":  "erp-backend/audit/evidence/performance.log",
+        "sha256":  "7E33C67F21CCC7E467969A3A240E94B86D728ED0B4658AAA7F289A7CC5325028"
+    },
+    {
+        "from":  "audit/evidence/repaired-api-defects.log",
+        "to":  "erp-backend/audit/evidence/repaired-api-defects.log",
+        "sha256":  "5E48C7814EDA6132BC433E053BA6D93FC9C9909237BD35F1F2A559C612F36C6B"
+    },
+    {
+        "from":  "audit/evidence/reproduced-api-defects.log",
+        "to":  "erp-backend/audit/evidence/reproduced-api-defects.log",
+        "sha256":  "54C86D403EC5E5AF83AA1100D3CBEBB93C6C2F02873451ED71B2A3395E02AF08"
+    },
+    {
+        "from":  "audit/evidence/reproduced-branch-payables.log",
+        "to":  "erp-backend/audit/evidence/reproduced-branch-payables.log",
+        "sha256":  "0F7128440A1825D6E9968A4CAB7EB8BFAD8D9CA54ED277EF6AE678327142380E"
+    },
+    {
+        "from":  "audit/evidence/reproduced-purchase-cancellation.log",
+        "to":  "erp-backend/audit/evidence/reproduced-purchase-cancellation.log",
+        "sha256":  "27EF3638D4D43B4619421F5F6F70366EC85328195320E591EDA1E4765C597E79"
+    },
+    {
+        "from":  "audit/evidence/reproduced-purchase-returns.log",
+        "to":  "erp-backend/audit/evidence/reproduced-purchase-returns.log",
+        "sha256":  "7E615F767ABF7F6B0431286C4A1AC7E41113E1A1E29A098A591EA9ECD7FD0FCE"
+    },
+    {
+        "from":  "audit/evidence/reproduced-purchase-validation.log",
+        "to":  "erp-backend/audit/evidence/reproduced-purchase-validation.log",
+        "sha256":  "1E8339AFBE6B8A95214370445C7215B9FAEED13AC81A3E24A19EAE343ABB02EE"
+    },
+    {
+        "from":  "audit/evidence/reproduced-supplier-statements.log",
+        "to":  "erp-backend/audit/evidence/reproduced-supplier-statements.log",
+        "sha256":  "1BDFC31F527910FED2105BF8316363DB66030C8F77E1604C368C1554EE0191C0"
+    },
+    {
+        "from":  "audit/evidence/reproduced-upload-defects.log",
+        "to":  "erp-backend/audit/evidence/reproduced-upload-defects.log",
+        "sha256":  "3A0504E4353E7DDD89C88355C1D39C8B202B6A9A8828812BD094ED9671FFAC4F"
+    },
+    {
+        "from":  "audit/evidence/supplier-statements-regressions.log",
+        "to":  "erp-backend/audit/evidence/supplier-statements-regressions.log",
+        "sha256":  "F3CBD7DDE283BEB414B398023172FDB2399E5694A9344CBA5C81FBB40045C850"
+    },
+    {
+        "from":  "audit/evidence/upload-regressions.log",
+        "to":  "erp-backend/audit/evidence/upload-regressions.log",
+        "sha256":  "DA0BE15331EB39B6DB85D74FA0A7CF2E2DCF2D3F31AF262C9E852D1E3DE109A6"
+    },
+    {
+        "from":  "audit/evidence/final/backend-audit-runtime.json",
+        "to":  "erp-backend/audit/evidence/final/backend-audit-runtime.json",
+        "sha256":  "A9BA132662BCDFF5C5B8D64A73EEF52ED3154E3F580C855D49DC8B338EC66923"
+    },
+    {
+        "from":  "audit/evidence/final/backend-audit.json",
+        "to":  "erp-backend/audit/evidence/final/backend-audit.json",
+        "sha256":  "A9BA132662BCDFF5C5B8D64A73EEF52ED3154E3F580C855D49DC8B338EC66923"
+    },
+    {
+        "from":  "audit/evidence/final/backend-build.log",
+        "to":  "erp-backend/audit/evidence/final/backend-build.log",
+        "sha256":  "8BA9422892704919C0972A842363B902439AB9CB65D460A41EBF89A12F6A82E2"
+    },
+    {
+        "from":  "audit/evidence/final/backend-lint.log",
+        "to":  "erp-backend/audit/evidence/final/backend-lint.log",
+        "sha256":  "A5E29CF09B1CC9FA75A574414F0F076EFED4BFF4E755D1C03FCB4613E6BA56CD"
+    },
+    {
+        "from":  "audit/evidence/final/backend-tests.log",
+        "to":  "erp-backend/audit/evidence/final/backend-tests.log",
+        "sha256":  "04B150DFCF37ED96C41E9BE4ECD0663E4CB8FF8C6961C9CB19F25B399FB85CCA"
+    },
+    {
+        "from":  "audit/evidence/final/backend-typecheck-final.log",
+        "to":  "erp-backend/audit/evidence/final/backend-typecheck-final.log",
+        "sha256":  "4DC8B6656121E3C01FCC7201F03553B03600E68EF9F41A3F34961081CCA55959"
+    },
+    {
+        "from":  "audit/evidence/final/backend-typecheck-initial.log",
+        "to":  "erp-backend/audit/evidence/final/backend-typecheck-initial.log",
+        "sha256":  "82479F557C354852A49E21D214039398600E7F9ADBFC34219B70350CC6855D55"
+    },
+    {
+        "from":  "audit/evidence/final/backend-typecheck.log",
+        "to":  "erp-backend/audit/evidence/final/backend-typecheck.log",
+        "sha256":  "4DC8B6656121E3C01FCC7201F03553B03600E68EF9F41A3F34961081CCA55959"
+    },
+    {
+        "from":  "audit/evidence/final/closure-backend-retry.log",
+        "to":  "erp-backend/audit/evidence/final/closure-backend-retry.log",
+        "sha256":  "7DD75610BA4200A86915DFA779E85FA36E905A27E5FF2DD392792DB83254C353"
+    },
+    {
+        "from":  "audit/evidence/final/closure-targeted-backend.log",
+        "to":  "erp-backend/audit/evidence/final/closure-targeted-backend.log",
+        "sha256":  "37695FEF6D50ABEE43CCC12E42AEAFB5CB390B0AEC3799A5DE286EACFD762048"
+    },
+    {
+        "from":  "audit/evidence/final/financial-after.log",
+        "to":  "erp-backend/audit/evidence/final/financial-after.log",
+        "sha256":  "4167B4118B3C31CC7541D4317C2CBF12EC7C9AEBA223A9854A3E4207D27A8111"
+    },
+    {
+        "from":  "audit/evidence/final/financial-tests.log",
+        "to":  "erp-backend/audit/evidence/final/financial-tests.log",
+        "sha256":  "CDC8225752E550EFD3B64B4C08F2BD40FC50B83CE4D7844B3CD4C7EEDC170CDF"
+    },
+    {
+        "from":  "audit/evidence/final/two-terminal-final.log",
+        "to":  "erp-backend/audit/evidence/final/two-terminal-final.log",
+        "sha256":  "27E6A947515BCCBCC0A4402CF138CAD6E9A714E1A182A0277B632C7FBFC20A8A"
+    },
+    {
+        "from":  "audit/evidence/pass2/backend-audit-runtime.json",
+        "to":  "erp-backend/audit/evidence/pass2/backend-audit-runtime.json",
+        "sha256":  "C3C80AD775C919E4E9EA095A2762A22EA371FEDF69DF717CD0D3CAC03AA5DB4D"
+    },
+    {
+        "from":  "audit/evidence/pass2/backend-audit.json",
+        "to":  "erp-backend/audit/evidence/pass2/backend-audit.json",
+        "sha256":  "93E094CF8D74F7E5C0D91B5B588DF07A6CBF663C4BE9F007A00E3F12C2F528B2"
+    },
+    {
+        "from":  "audit/evidence/pass2/backend-build.log",
+        "to":  "erp-backend/audit/evidence/pass2/backend-build.log",
+        "sha256":  "5D83A79286B8976DA810BF1C1C5ED35EA88876FFB16E888A44A9A8D6513F9156"
+    },
+    {
+        "from":  "audit/evidence/pass2/backend-final-tests-complete.log",
+        "to":  "erp-backend/audit/evidence/pass2/backend-final-tests-complete.log",
+        "sha256":  "BE1187FA072FC269375A3691BFE073A484E00DDC5B504772C9BC9226814C3FC1"
+    },
+    {
+        "from":  "audit/evidence/pass2/backend-final-tests-success.log",
+        "to":  "erp-backend/audit/evidence/pass2/backend-final-tests-success.log",
+        "sha256":  "DA4CE336FD61837E4B3ED0CC19738BB715F8AD1FF02C0483592BFE27F94723B9"
+    },
+    {
+        "from":  "audit/evidence/pass2/backend-final-tests.log",
+        "to":  "erp-backend/audit/evidence/pass2/backend-final-tests.log",
+        "sha256":  "ABED7D69CDF26D76D7E32EFF9DAC3B407BBA09A5AF1C2A006A199875C8919A65"
+    },
+    {
+        "from":  "audit/evidence/pass2/backend-first-verification.log",
+        "to":  "erp-backend/audit/evidence/pass2/backend-first-verification.log",
+        "sha256":  "DE41A47F1AD8EFBBB03AA9DF54B21727A549A5DFEB563CF09137EE993B72BB9F"
+    },
+    {
+        "from":  "audit/evidence/pass2/backend-lint.log",
+        "to":  "erp-backend/audit/evidence/pass2/backend-lint.log",
+        "sha256":  "A5E29CF09B1CC9FA75A574414F0F076EFED4BFF4E755D1C03FCB4613E6BA56CD"
+    },
+    {
+        "from":  "audit/evidence/pass2/backend-typecheck.log",
+        "to":  "erp-backend/audit/evidence/pass2/backend-typecheck.log",
+        "sha256":  "4DC8B6656121E3C01FCC7201F03553B03600E68EF9F41A3F34961081CCA55959"
+    },
+    {
+        "from":  "audit/evidence/pass2/financial-branch-regressions.log",
+        "to":  "erp-backend/audit/evidence/pass2/financial-branch-regressions.log",
+        "sha256":  "B7158D6DB3C7432318E930E9EAD5D908413A7EE936FAB9D1E8A8A1F449A4CCC3"
+    },
+    {
+        "from":  "audit/evidence/pass2/financial-regressions.log",
+        "to":  "erp-backend/audit/evidence/pass2/financial-regressions.log",
+        "sha256":  "89F29B95B640CC4BF59D1DA893E340CDF4240D2C1249C33F6DDC80816990C1C7"
+    },
+    {
+        "from":  "audit/evidence/pass2/historical-readonly.json",
+        "to":  "erp-backend/audit/evidence/pass2/historical-readonly.json",
+        "sha256":  "20A5DC8E3843A609D743942C8606951FEFEA91802082DD0C18E690CD7510ABF4"
+    },
+    {
+        "from":  "audit/evidence/pass2/reproduced-financial-followup.log",
+        "to":  "erp-backend/audit/evidence/pass2/reproduced-financial-followup.log",
+        "sha256":  "9E00EDA2071F6D1B2DBCE40F6E64338DB0F21CF9087849B64EFC9BF3A07E0C13"
+    },
+    {
+        "from":  "audit/evidence/pass2/reproduced-financial-matrix.log",
+        "to":  "erp-backend/audit/evidence/pass2/reproduced-financial-matrix.log",
+        "sha256":  "C9FAED0887D0AD9D40C155F69B1E52DFFBF64A395D0189E933FDBA54E1C9A3AD"
+    },
+    {
+        "from":  "audit/evidence/pass2/reproduced-purchase-duplicate-lines.log",
+        "to":  "erp-backend/audit/evidence/pass2/reproduced-purchase-duplicate-lines.log",
+        "sha256":  "935A934A33C4C97A6EF916A85AD175752F8A583941D6E82687E7A36272C00CEE"
+    },
+    {
+        "from":  "audit/evidence/pass2/reproduced-supplier-auto-statement.log",
+        "to":  "erp-backend/audit/evidence/pass2/reproduced-supplier-auto-statement.log",
+        "sha256":  "174C0D86BFB6BB4E2D73781539E0A7E67C2B8C0CFF54DE570256E02E31F912E8"
+    },
+    {
+        "from":  "audit/evidence/pass2/reproduced-supplier-invoice.log",
+        "to":  "erp-backend/audit/evidence/pass2/reproduced-supplier-invoice.log",
+        "sha256":  "1771C2144DFFE09D6D9DB4B803769AFB1324DC0342418966920DF5677D4E0493"
+    },
+    {
+        "from":  "audit/evidence/pass2/supplier-invoice-regressions.log",
+        "to":  "erp-backend/audit/evidence/pass2/supplier-invoice-regressions.log",
+        "sha256":  "41397F1F89A0896F83E54EDF0D647C69F6A01805831E6182A55BCB1129E27ADE"
+    },
+    {
+        "from":  "audit/evidence/pass2/two-terminal-acceptance.log",
+        "to":  "erp-backend/audit/evidence/pass2/two-terminal-acceptance.log",
+        "sha256":  "4AFB0A0759C5B3531768027F5AFBCA5DD7BF383A13E0DC3FE0BC2C2F203EE4C9"
+    },
+    {
+        "from":  "audit/evidence/pass3/backend-audit-runtime.json",
+        "to":  "erp-backend/audit/evidence/pass3/backend-audit-runtime.json",
+        "sha256":  "A9BA132662BCDFF5C5B8D64A73EEF52ED3154E3F580C855D49DC8B338EC66923"
+    },
+    {
+        "from":  "audit/evidence/pass3/backend-audit.json",
+        "to":  "erp-backend/audit/evidence/pass3/backend-audit.json",
+        "sha256":  "A9BA132662BCDFF5C5B8D64A73EEF52ED3154E3F580C855D49DC8B338EC66923"
+    },
+    {
+        "from":  "audit/evidence/pass3/backend-build.log",
+        "to":  "erp-backend/audit/evidence/pass3/backend-build.log",
+        "sha256":  "4A24693A9360B95E2B513FE3906A77C455AA436E33B89981B1D156892DB1E9B1"
+    },
+    {
+        "from":  "audit/evidence/pass3/backend-install.log",
+        "to":  "erp-backend/audit/evidence/pass3/backend-install.log",
+        "sha256":  "848196583C4AA032DDF20072BBA21D960303079D4861E3E7DAC5CBD2BCB38226"
+    },
+    {
+        "from":  "audit/evidence/pass3/backend-lint.log",
+        "to":  "erp-backend/audit/evidence/pass3/backend-lint.log",
+        "sha256":  "A5E29CF09B1CC9FA75A574414F0F076EFED4BFF4E755D1C03FCB4613E6BA56CD"
+    },
+    {
+        "from":  "audit/evidence/pass3/backend-tests.log",
+        "to":  "erp-backend/audit/evidence/pass3/backend-tests.log",
+        "sha256":  "1798663A36CC83E161F76D0A7AC98D25B26CEF231DD7B73290EE6D1A93EE2CF1"
+    },
+    {
+        "from":  "audit/evidence/pass3/backend-typecheck.log",
+        "to":  "erp-backend/audit/evidence/pass3/backend-typecheck.log",
+        "sha256":  "4DC8B6656121E3C01FCC7201F03553B03600E68EF9F41A3F34961081CCA55959"
+    },
+    {
+        "from":  "audit/evidence/release-closure/backend-build.log",
+        "to":  "erp-backend/audit/evidence/release-closure/backend-build.log",
+        "sha256":  "9C56417D0907F47F4B2500636F6522407974494D9D2C3B08255D7D1212CA0637"
+    },
+    {
+        "from":  "audit/evidence/release-closure/backend-lint-final.log",
+        "to":  "erp-backend/audit/evidence/release-closure/backend-lint-final.log",
+        "sha256":  "A5E29CF09B1CC9FA75A574414F0F076EFED4BFF4E755D1C03FCB4613E6BA56CD"
+    },
+    {
+        "from":  "audit/evidence/release-closure/backend-lint.log",
+        "to":  "erp-backend/audit/evidence/release-closure/backend-lint.log",
+        "sha256":  "A5E29CF09B1CC9FA75A574414F0F076EFED4BFF4E755D1C03FCB4613E6BA56CD"
+    },
+    {
+        "from":  "audit/evidence/release-closure/backend-tests.log",
+        "to":  "erp-backend/audit/evidence/release-closure/backend-tests.log",
+        "sha256":  "A61D6582DA3E58A4524D0984D41EEEB2D4BB3D64151322AEBD490277CC0E5B42"
+    },
+    {
+        "from":  "audit/evidence/release-closure/backend-typecheck-final.log",
+        "to":  "erp-backend/audit/evidence/release-closure/backend-typecheck-final.log",
+        "sha256":  "AB1F49A7816361DE478803A8071DD28D39197E88E2723D0C45A738628788B669"
+    },
+    {
+        "from":  "audit/evidence/release-closure/backend-typecheck-qualified.log",
+        "to":  "erp-backend/audit/evidence/release-closure/backend-typecheck-qualified.log",
+        "sha256":  "4DC8B6656121E3C01FCC7201F03553B03600E68EF9F41A3F34961081CCA55959"
+    },
+    {
+        "from":  "audit/evidence/release-closure/backend-typecheck.log",
+        "to":  "erp-backend/audit/evidence/release-closure/backend-typecheck.log",
+        "sha256":  "4DC8B6656121E3C01FCC7201F03553B03600E68EF9F41A3F34961081CCA55959"
+    },
+    {
+        "from":  "audit/evidence/release-closure/backend-types-latest.execution.json",
+        "to":  "erp-backend/audit/evidence/release-closure/backend-types-latest.execution.json",
+        "sha256":  "2DB589B95F171D3C0AFE31749C1A4AE1C9ED346F12EC3893E5B2030C46529B48"
+    },
+    {
+        "from":  "audit/evidence/release-closure/backend-types-latest.log",
+        "to":  "erp-backend/audit/evidence/release-closure/backend-types-latest.log",
+        "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+        "from":  "audit/evidence/release-closure/finance-targeted-retry.log",
+        "to":  "erp-backend/audit/evidence/release-closure/finance-targeted-retry.log",
+        "sha256":  "D18B57BDC1296C22253A8CB362BB81084CD48DD956394F0B5DB368B345B9CE48"
+    },
+    {
+        "from":  "audit/evidence/release-closure/finance-targeted.log",
+        "to":  "erp-backend/audit/evidence/release-closure/finance-targeted.log",
+        "sha256":  "CB5B2962E6F39A57F332CADAD6405F90CC235FBB519CA21C3A06D555F99F8328"
+    },
+    {
+        "from":  "audit/evidence/release-closure/historical-readonly-error.log",
+        "to":  "erp-backend/audit/evidence/release-closure/historical-readonly-error.log",
+        "sha256":  "5D9D69832CD9D152FDC0AD4804439AFEA207A9E8FCDAF41CE7500F1AA070C419"
+    },
+    {
+        "from":  "audit/evidence/release-closure/historical-readonly.json",
+        "to":  "erp-backend/audit/evidence/release-closure/historical-readonly.json",
+        "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+        "from":  "audit/evidence/release-closure/new-finance-targeted.log",
+        "to":  "erp-backend/audit/evidence/release-closure/new-finance-targeted.log",
+        "sha256":  "E7E8785CA09344DAC046F20860210FF91C8A44A788D35F1799BE4AECEA1D8288"
+    },
+    {
+        "from":  "audit/evidence/release-closure/security-targeted.log",
+        "to":  "erp-backend/audit/evidence/release-closure/security-targeted.log",
+        "sha256":  "71627FDD67B7EF5E4C6F6A46386AD827588D0D6DA5D5A59C2DE49BE0D8A1504F"
+    },
+    {
+        "from":  "audit/evidence/release-closure/socket-targeted.log",
+        "to":  "erp-backend/audit/evidence/release-closure/socket-targeted.log",
+        "sha256":  "482B283EBB4A72BF4D8A70996BC79B8829FB3A458A94144A25F3E10A85F65685"
+    },
+    {
+        "from":  "audit/evidence/release-closure/restore/dump.config.yml",
+        "to":  "erp-backend/audit/evidence/release-closure/restore/dump.config.yml",
+        "sha256":  "E03E664342AC111E1AE4AD94D2E82AFF9AE7178A4A365F933B9059F11FB88494"
+    },
+    {
+        "from":  "audit/evidence/release-closure/restore/dump.log",
+        "to":  "erp-backend/audit/evidence/release-closure/restore/dump.log",
+        "sha256":  "3C64C7B44E7FEEF6346A15A33408749777C08074F0EDC4B6DE2714AEABCECA64"
+    },
+    {
+        "from":  "audit/evidence/release-closure/restore/restore.config.yml",
+        "to":  "erp-backend/audit/evidence/release-closure/restore/restore.config.yml",
+        "sha256":  "E03E664342AC111E1AE4AD94D2E82AFF9AE7178A4A365F933B9059F11FB88494"
+    },
+    {
+        "from":  "audit/evidence/release-closure/restore/restore.log",
+        "to":  "erp-backend/audit/evidence/release-closure/restore/restore.log",
+        "sha256":  "1B41816DA546E1B30CAD923B561C5E5F221F2E800DC23BEEC8502FBE262C3374"
+    },
+    {
+        "from":  "audit/evidence/release-closure/restore/results.json",
+        "to":  "erp-backend/audit/evidence/release-closure/restore/results.json",
+        "sha256":  "EEEF900388E246448C186132BC4213D813E55059D85132A8C3834CB92C7377B0"
+    },
+    {
+        "from":  "audit/evidence/release-closure/restore/synthetic-production-format.archive.gz",
+        "to":  "erp-backend/audit/evidence/release-closure/restore/synthetic-production-format.archive.gz",
+        "sha256":  "F6A3B00E58725E4185DDE52D6E79DE8CE415DFA0C878CDA06B3ABFE774C417B9"
+    },
+    {
+        "from":  "audit/evidence/release-closure/tools/download.json",
+        "to":  "erp-backend/audit/evidence/release-closure/tools/download.json",
+        "sha256":  "EB43A723B081875C9AD6E88E2147F186079134348A52CE315412F984F50A3990"
+    }
+]
